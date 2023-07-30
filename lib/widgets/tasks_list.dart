@@ -1,3 +1,4 @@
+import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import '../widgets/tasks_tile.dart';
 import 'package:provider/provider.dart';
@@ -18,6 +19,9 @@ class TasksList extends StatelessWidget {
               checkboxCallback: (checkboxState) {
                 taskData.updateTask(task);
               },
+              longPressCallback: () {
+                taskData.removeTask(taskData.tasks[index]);
+              },
             );
           },
         );
@@ -25,5 +29,3 @@ class TasksList extends StatelessWidget {
     );
   }
 }
-
-
