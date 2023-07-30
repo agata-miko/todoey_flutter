@@ -26,7 +26,4 @@ class TasksList extends StatelessWidget {
   }
 }
 
-// children: <Widget>[
-// TaskTile(taskTitle:tasks[0].name, isChecked: tasks[0].isDone),
-// TaskTile(taskTitle:tasks[1].name, isChecked: tasks[1].isDone),
-// TaskTile(taskTitle:tasks[2].name, isChecked: tasks[2].isDone),
+
